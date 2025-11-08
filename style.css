@@ -1,3 +1,18 @@
+/* Reset CSS */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img,
+svg,
+picture {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 :root {
   /* Colors */
   --black: hsl(0, 0%, 0%);
@@ -31,7 +46,168 @@
   --lh-38: 38px;
   --lh-47: 47px;
 }
+body {
+  background-color: var(--navy-950);
+  font-family: var(--font-family);
+  font-size: var(--fs-18);
+  font-weight: var(--fw-400);
+  color: var(--white);
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+main {
+  padding-inline: 24px;
+  padding-block: 81px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card__profile {
+  width: 100%;
+  height: 203px;
+  background-color: var(--navy-900);
+  border-radius: 15px;
+  margin-block-end: 3rem;
+}
+.card__profile-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  height: 65%;
+  padding-inline: 1rem;
+  background-color: var(--purple-600);
+  border-radius: 12px;
+}
+.card__profile-info img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 3px solid var(--white);
+}
+.card__profile-info span {
+  font-size: var(--fs-15);
+  line-height: var(--lh-18);
+  color: var(--navy-200);
+}
+.card__profile-info h1 {
+  font-size: var(--fs-24);
+  font-weight: var(--fw-300);
+  line-height: var(--lh-28);
+}
+.card__profile-time {
+  height: 35%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.card__profile-time button {
+  border: none;
+  outline: none;
+  line-height: var(--lh-21);
+  color: var(--navy-200);
+  background-color: inherit;
+  transition: color 0.4s ease-in-out;
+}
+.card__profile-time button:hover {
+  color: var(--white);
+  cursor: pointer;
+}
+.card__profile-time button.active {
+  color: var(--white);
+}
+.card {
+  width: 100%;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 14px;
+  overflow: hidden;
+}
 
+.card button {
+  border: none;
+  outline: none;
+  background-color: inherit;
+  transition: color 0.4s ease-in-out;
+}
+
+.card h2 {
+  font-size: clamp(20px, 0.8rem + 2vw, 1.4rem);
+  font-weight: 400;
+}
+
+.card span {
+  font-size: clamp(12px, 0.6rem + 1.5vw, 0.9rem);
+  color: var(--navy-200);
+}
+
+.card h3 {
+  font-size: clamp(22px, 1rem + 2vw, 1.6rem);
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.card__img {
+  width: 100%;
+  height: 40%;
+  object-fit: cover;
+  display: flex;
+  justify-content: flex-end;
+  padding-inline-end: 20px;
+}
+.card--work .card__img {
+  background-color: var(--orange);
+}
+
+.card--play .card__img {
+  background-color: var(--blue);
+}
+
+.card--study .card__img {
+  background-color: var(--pink);
+}
+
+.card--exercise .card__img {
+  background-color: var(--green);
+}
+
+.card--social .card__img {
+  background-color: var(--purple-700);
+}
+
+.card--self-care .card__img {
+  background-color: var(--yellow);
+}
+.card__info {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-block-start: 1rem;
+  padding-inline: 0.5rem;
+  margin-top: -30px;
+  background-color: var(--navy-800);
+  border-radius: 14px;
+}
+.card__info-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 1rem;
+}
+.card__info-time {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 1rem;
+  gap: 1rem;
+}
+footer {
+  margin-block-start: 81px;
+}
 .attribution {
   font-size: 11px;
   text-align: center;

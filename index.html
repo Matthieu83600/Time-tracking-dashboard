@@ -14,28 +14,30 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
-    <!-- styles file -->
+    <!-- Styles file -->
     <link rel="stylesheet" href="./style.css" />
+    <!-- JS file -->
+    <script defer src="./main.js"></script>
     <title>Frontend Mentor | Time tracking dashboard</title>
   </head>
   <body>
     <main>
-      <div>
-        <div>
+      <div class="card__profile">
+        <div class="card__profile-info">
           <img src="./images/image-jeremy.png" alt="Jeremy Robson" width="32" />
           <div>
             <span>Report for</span>
             <h1>Jeremy Robson</h1>
           </div>
         </div>
-        <div>
+        <div class="card__profile-time">
           <button>Daily</button>
-          <button>Weekly</button>
+          <button class="active">Weekly</button>
           <button>Monthly</button>
         </div>
       </div>
       <div class="card card--work">
-        <div>
+        <div class="card__img">
           <img src="./images/icon-work.svg" alt="icon card work" />
         </div>
         <div class="card__info">
@@ -50,7 +52,7 @@
         </div>
       </div>
       <div class="card card--play">
-        <div>
+        <div class="card__img">
           <img src="./images/icon-play.svg" alt="icon card play" />
         </div>
         <div class="card__info">
@@ -65,7 +67,7 @@
         </div>
       </div>
       <div class="card card--study">
-        <div>
+        <div class="card__img">
           <img src="./images/icon-study.svg" alt="icon card study" />
         </div>
         <div class="card__info">
@@ -80,7 +82,7 @@
         </div>
       </div>
       <div class="card card--exercise">
-        <div>
+        <div class="card__img">
           <img src="./images/icon-exercise.svg" alt="icon card exercise" />
         </div>
         <div class="card__info">
@@ -95,7 +97,7 @@
         </div>
       </div>
       <div class="card card--social">
-        <div>
+        <div class="card__img">
           <img src="./images/icon-social.svg" alt="icon card social" />
         </div>
         <div class="card__info">
@@ -110,7 +112,7 @@
         </div>
       </div>
       <div class="card card--self-care">
-        <div>
+        <div class="card__img">
           <img src="./images/icon-self-care.svg" alt="icon card self-care" />
         </div>
         <div class="card__info">
